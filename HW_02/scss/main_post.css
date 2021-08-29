@@ -1,0 +1,752 @@
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+}
+
+.sidebar__btn:hover, .sidebar__posts-btn:hover, .posts__btn:hover, .posts__feedback .like-btn:hover, .header .header__descr-wrap .header__description .header__button:hover {
+  cursor: url("../img/icons/cursor-dark.svg"), pointer;
+  background-color: #393737;
+  color: #fff;
+}
+
+.sidebar__inspiration-input, .sidebar__product-input, .sidebar__technology-input, .sidebar__food-input, .sidebar__travel-input {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.sidebar__inspiration-input:checked ~ .sidebar__list, .sidebar__product-input:checked ~ .sidebar__list, .sidebar__technology-input:checked ~ .sidebar__list, .sidebar__food-input:checked ~ .sidebar__list, .sidebar__travel-input:checked ~ .sidebar__list {
+  display: block;
+  margin-top: 7.5px;
+}
+.sidebar__inspiration-input:checked ~ .sidebar__category-title::after, .sidebar__product-input:checked ~ .sidebar__category-title::after, .sidebar__technology-input:checked ~ .sidebar__category-title::after, .sidebar__food-input:checked ~ .sidebar__category-title::after, .sidebar__travel-input:checked ~ .sidebar__category-title::after {
+  transform: rotate(180deg);
+  right: 4%;
+  top: 88%;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+}
+
+.sidebar__btn:hover, .sidebar__posts-btn:hover, .posts__btn:hover, .posts__feedback .like-btn:hover, .header .header__descr-wrap .header__description .header__button:hover {
+  cursor: url("../img/icons/cursor-dark.svg"), pointer;
+  background-color: #393737;
+  color: #fff;
+}
+
+.sidebar__inspiration-input, .sidebar__product-input, .sidebar__technology-input, .sidebar__food-input, .sidebar__travel-input {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.sidebar__inspiration-input:checked ~ .sidebar__list, .sidebar__product-input:checked ~ .sidebar__list, .sidebar__technology-input:checked ~ .sidebar__list, .sidebar__food-input:checked ~ .sidebar__list, .sidebar__travel-input:checked ~ .sidebar__list {
+  display: block;
+  margin-top: 7.5px;
+}
+.sidebar__inspiration-input:checked ~ .sidebar__category-title::after, .sidebar__product-input:checked ~ .sidebar__category-title::after, .sidebar__technology-input:checked ~ .sidebar__category-title::after, .sidebar__food-input:checked ~ .sidebar__category-title::after, .sidebar__travel-input:checked ~ .sidebar__category-title::after {
+  transform: rotate(180deg);
+  right: 4%;
+  top: 88%;
+}
+
+.header {
+  padding-bottom: 206px;
+  padding-bottom: 141px;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: 0% 30%;
+}
+.header .header__navwrap {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: top center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 88px;
+  z-index: 1;
+}
+.header .header__navbar {
+  margin: 0 auto;
+  height: 65px;
+  max-width: 1160px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+  line-height: 65px;
+}
+.header .header__navbar .logo {
+  grid-column: 1/3;
+  line-height: 65px;
+}
+.header .header__navbar .logo a {
+  color: #4D4C49;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 0.04rem;
+}
+.header .header__navbar .header__menu {
+  margin-left: 20px;
+  grid-column: 8/13;
+  text-align: left;
+}
+.header .header__navbar .header__menu ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header .header__navbar .header__menu ul .visitted-link {
+  border-bottom: 1px solid #4D4C49;
+  font-weight: bold;
+}
+.header .header__navbar .header__menu ul a {
+  color: #4D4C49;
+  font-size: 15px;
+  text-decoration: none;
+  margin-right: 40px;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+.header .header__navbar .header__menu ul a:hover {
+  border-bottom: 2px solid #4D4C49;
+  font-weight: bold;
+}
+.header .header__descr-wrap {
+  margin: 65px auto;
+  margin-bottom: 65px;
+  max-width: 1160px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+}
+.header .header__descr-wrap .header__description {
+  grid-column: 1/8;
+}
+.header .header__descr-wrap .header__description .header__title {
+  font-size: 1.75rem;
+  margin-top: 65px;
+  line-height: 37px;
+  letter-spacing: 0.03rem;
+  width: 65%;
+}
+.header .header__descr-wrap .header__description .header__text {
+  margin-top: 17px;
+  line-height: 26px;
+  font-size: 17px;
+  white-space: pre;
+}
+.header .header__descr-wrap .header__description .header__buttons {
+  margin-top: 23px;
+}
+.header .header__descr-wrap .header__description .header__button {
+  margin-right: 22px;
+  height: 45px;
+  border-radius: 5px;
+  outline: none;
+}
+.header .header__descr-wrap .header__description .header__button_dark {
+  width: 100px;
+  color: #fff;
+  background-color: #4D4C49;
+  border-color: transparent;
+}
+.header .header__descr-wrap .header__description .header__button_light {
+  width: 125px;
+  background-color: transparent;
+  border: 1px solid #4D4949;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+}
+
+.sidebar__btn:hover, .sidebar__posts-btn:hover, .posts__btn:hover, .posts__feedback .like-btn:hover, .header .header__descr-wrap .header__description .header__button:hover {
+  cursor: url("../img/icons/cursor-dark.svg"), pointer;
+  background-color: #393737;
+  color: #fff;
+}
+
+.sidebar__inspiration-input, .sidebar__product-input, .sidebar__technology-input, .sidebar__food-input, .sidebar__travel-input {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.sidebar__inspiration-input:checked ~ .sidebar__list, .sidebar__product-input:checked ~ .sidebar__list, .sidebar__technology-input:checked ~ .sidebar__list, .sidebar__food-input:checked ~ .sidebar__list, .sidebar__travel-input:checked ~ .sidebar__list {
+  display: block;
+  margin-top: 7.5px;
+}
+.sidebar__inspiration-input:checked ~ .sidebar__category-title::after, .sidebar__product-input:checked ~ .sidebar__category-title::after, .sidebar__technology-input:checked ~ .sidebar__category-title::after, .sidebar__food-input:checked ~ .sidebar__category-title::after, .sidebar__travel-input:checked ~ .sidebar__category-title::after {
+  transform: rotate(180deg);
+  right: 4%;
+  top: 88%;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+}
+
+.sidebar__btn:hover, .sidebar__posts-btn:hover, .posts__btn:hover, .posts__feedback .like-btn:hover, .header .header__descr-wrap .header__description .header__button:hover {
+  cursor: url("../img/icons/cursor-dark.svg"), pointer;
+  background-color: #393737;
+  color: #fff;
+}
+
+.sidebar__inspiration-input, .sidebar__product-input, .sidebar__technology-input, .sidebar__food-input, .sidebar__travel-input {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.sidebar__inspiration-input:checked ~ .sidebar__list, .sidebar__product-input:checked ~ .sidebar__list, .sidebar__technology-input:checked ~ .sidebar__list, .sidebar__food-input:checked ~ .sidebar__list, .sidebar__travel-input:checked ~ .sidebar__list {
+  display: block;
+  margin-top: 7.5px;
+}
+.sidebar__inspiration-input:checked ~ .sidebar__category-title::after, .sidebar__product-input:checked ~ .sidebar__category-title::after, .sidebar__technology-input:checked ~ .sidebar__category-title::after, .sidebar__food-input:checked ~ .sidebar__category-title::after, .sidebar__travel-input:checked ~ .sidebar__category-title::after {
+  transform: rotate(180deg);
+  right: 4%;
+  top: 88%;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+}
+
+.sidebar__btn:hover, .sidebar__posts-btn:hover, .posts__btn:hover, .posts__feedback .like-btn:hover, .header .header__descr-wrap .header__description .header__button:hover {
+  cursor: url("../img/icons/cursor-dark.svg"), pointer;
+  background-color: #393737;
+  color: #fff;
+}
+
+.sidebar__inspiration-input, .sidebar__product-input, .sidebar__technology-input, .sidebar__food-input, .sidebar__travel-input {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.sidebar__inspiration-input:checked ~ .sidebar__list, .sidebar__product-input:checked ~ .sidebar__list, .sidebar__technology-input:checked ~ .sidebar__list, .sidebar__food-input:checked ~ .sidebar__list, .sidebar__travel-input:checked ~ .sidebar__list {
+  display: block;
+  margin-top: 7.5px;
+}
+.sidebar__inspiration-input:checked ~ .sidebar__category-title::after, .sidebar__product-input:checked ~ .sidebar__category-title::after, .sidebar__technology-input:checked ~ .sidebar__category-title::after, .sidebar__food-input:checked ~ .sidebar__category-title::after, .sidebar__travel-input:checked ~ .sidebar__category-title::after {
+  transform: rotate(180deg);
+  right: 4%;
+  top: 88%;
+}
+
+.logo-container {
+  grid-column: 1/13;
+  margin-top: 28px;
+}
+.logo-container img {
+  margin-right: 23px;
+}
+
+.footer {
+  background-color: #F8F8F8;
+  position: fixed;
+  border-top: 1px solid #DCDCDC;
+  bottom: 0;
+  width: 100%;
+  padding-top: 8px;
+}
+.footer__grid-wrap {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+}
+.footer__content {
+  grid-column: 1/13;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__content .logo-container {
+  margin-top: 0;
+  margin-right: 20px;
+}
+.footer__content .logo {
+  grid-column: 1/3;
+  line-height: 65px;
+  margin-left: 10px;
+}
+.footer__content .logo a {
+  color: #4D4C49;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 0.04rem;
+}
+.footer__content p {
+  line-height: 25px;
+  font-size: 15px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Hind Siliguri Regular;
+  position: relative;
+}
+
+.header {
+  background: none;
+  padding-bottom: 0;
+}
+.header .header__navwrap {
+  background: none;
+}
+
+.container {
+  color: #4D4C49;
+}
+
+.posts {
+  margin-top: 98px;
+  grid-column: 1/8;
+  position: relative;
+}
+.posts h1 {
+  font-size: 28px;
+  line-height: 37px;
+  letter-spacing: 0.03rem;
+  width: 95%;
+  margin-bottom: 25px;
+}
+.posts__header {
+  position: relative;
+  padding-left: 68px;
+  margin-bottom: 20px;
+}
+.posts__header h4 {
+  font-size: 17px;
+  line-height: 28px;
+  margin-top: 5px;
+}
+.posts__header span {
+  font-size: 15px;
+  line-height: 25px;
+}
+.posts__header-comments, .posts__rating {
+  display: inline;
+  margin-left: 7px;
+}
+.posts__face {
+  position: absolute;
+  top: -1%;
+  left: -0.5%;
+}
+.posts__background {
+  border-radius: 5px;
+}
+.posts__player {
+  margin-top: 11px;
+}
+.posts__text-container {
+  margin-top: 10px;
+}
+.posts__text-container p {
+  font-size: 17px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.posts__text-container p:nth-child(2) {
+  width: 98%;
+}
+.posts__text-container p:nth-child(3) {
+  width: 98.5%;
+}
+.posts__text-container p a {
+  letter-spacing: 0.03rem;
+  color: #4D4C49;
+  text-decoration: none;
+  cursor: pointer;
+}
+.posts__text-container p a:hover {
+  cursor: url("../img/icons/cursor-gray.svg"), pointer;
+  text-decoration: underline;
+}
+.posts__techno {
+  margin-top: 40px;
+}
+.posts__techno h2 {
+  margin-bottom: 17px;
+  letter-spacing: 0.025rem;
+}
+.posts__techno p {
+  font-size: 17px;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.posts__techno_bordered {
+  padding: 10px 0 0 26px;
+  border-left: 5px solid #E6E6E6;
+}
+.posts__techno_bordered p {
+  font-size: 17px;
+  letter-spacing: -0.005rem;
+  line-height: 26px;
+  width: 81.5%;
+}
+.posts__techno_bordered a {
+  letter-spacing: 0.03rem;
+  color: #4D4C49;
+  text-decoration: none;
+  cursor: pointer;
+}
+.posts__techno_bordered a:hover {
+  cursor: url("../img/icons/cursor-gray.svg"), pointer;
+  text-decoration: underline;
+}
+.posts__interface {
+  margin-top: 46px;
+}
+.posts__interface h2 {
+  letter-spacing: 0.02rem;
+}
+.posts__interface p {
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 0;
+  width: 98%;
+  margin-top: 17px;
+}
+.posts__interface a {
+  letter-spacing: 0.01rem;
+  color: #4D4C49;
+  text-decoration: none;
+  cursor: pointer;
+}
+.posts__interface a:hover {
+  cursor: url("../img/icons/cursor-gray.svg"), pointer;
+  text-decoration: underline;
+}
+.posts hr {
+  width: 98%;
+  margin-top: 10px;
+}
+.posts__feedback {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+  position: relative;
+}
+.posts__feedback .like-logo {
+  margin-top: 23px;
+  position: relative;
+  padding-left: 20px;
+}
+.posts__feedback .like-logo svg {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.posts__feedback .like-logo svg:hover #like {
+  color: #000;
+  fill: #000;
+}
+.posts__feedback .like-logo span {
+  display: block;
+  margin-left: 13px;
+  margin-top: 10px;
+}
+.posts__feedback .like-btn {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.posts__feedback .logo-container {
+  position: absolute;
+  bottom: 0;
+  right: -1%;
+}
+.posts__reviews {
+  margin-top: 43px;
+  position: relative;
+}
+.posts__reviews h2 {
+  letter-spacing: 0.02rem;
+}
+.posts__reviews-wrap {
+  padding: 30px 0 30px 55px;
+  border-left: 2px solid #DDDDDD;
+  margin-left: 40px;
+  margin-top: 38px;
+}
+.posts__review {
+  background-color: #FCF6F6;
+  padding: 10px 20px 45px;
+  width: 96%;
+  margin-bottom: 70px;
+}
+.posts__review p {
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 10px;
+}
+.posts__review a {
+  float: right;
+  margin-top: 14px;
+  color: #4D4C49;
+}
+.posts__review_Emma {
+  padding-right: 18px;
+}
+.posts__review_Emma p {
+  width: 99.8%;
+}
+.posts__review_Emma .posts__time {
+  margin-top: 2px;
+  margin-left: 1px;
+}
+.posts__review_Ann {
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+.posts__review-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.posts__review-header p {
+  font-size: 17px;
+  line-height: 28px;
+  display: inline;
+}
+.posts__review-header span {
+  font-size: 15px;
+  line-height: 25px;
+  margin-left: 6px;
+}
+.posts__time {
+  margin-top: 5px;
+}
+.posts__round-icon {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #DDDDDD;
+  border-radius: 50%;
+}
+.posts__round-icon_top {
+  position: absolute;
+  top: 5.5%;
+  left: 5%;
+}
+.posts__round-icon_bottom {
+  position: absolute;
+  bottom: -1.8%;
+  left: 5%;
+}
+.posts__Jack-icon {
+  position: absolute;
+  top: 10.8%;
+  left: 0;
+}
+.posts__Emma-icon {
+  position: absolute;
+  top: 37.8%;
+  left: 0;
+}
+.posts__Ann-icon {
+  position: absolute;
+  bottom: 9.2%;
+  left: 0;
+}
+.posts__btn {
+  font-size: 15px;
+  line-height: 25px;
+  display: block;
+  background-color: #fff;
+  padding: 9px 26px;
+  border-radius: 5px;
+  border: 1px solid #4D4C49;
+  margin: 75px 100px 0 292px;
+}
+.posts__btn:hover {
+  cursor: url("../img/icons/cursor-gray.svg"), pointer;
+}
+
+.sidebar {
+  grid-column: 8/13;
+  padding-left: 15px;
+  margin-top: 80px;
+}
+.sidebar__posts {
+  margin-top: 210px;
+  background-color: #FCF6F6;
+  padding: 33px 30px 105px 30px;
+  border-radius: 5px;
+}
+.sidebar__posts h2 {
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 10px;
+}
+.sidebar__post {
+  margin-top: 30px;
+  display: flex;
+}
+.sidebar__post img {
+  max-height: 150px;
+}
+.sidebar__post a {
+  font-size: 17px;
+  line-height: 23px;
+  text-decoration: none;
+  color: #4D4C49;
+}
+.sidebar__post p {
+  width: 90%;
+}
+.sidebar__post-info {
+  padding: 35px 0 0px 15px;
+}
+.sidebar__post-details {
+  line-height: 25px;
+  margin-top: 17px;
+  position: relative;
+}
+.sidebar__post-details span {
+  font-style: 14px;
+}
+.sidebar__post-details .blog__comments {
+  position: absolute;
+  bottom: -2%;
+  right: 1%;
+}
+.sidebar__posts-btn {
+  font-size: 15px;
+  line-height: 25px;
+  padding: 9px 26px;
+  border-radius: 5px;
+  border: 1px solid #4D4C49;
+  background-color: #FCF6F6;
+  margin: 30px 0;
+  float: right;
+}
+.sidebar__posts-btn:hover {
+  cursor: url("../img/icons/cursor-gray.svg"), pointer;
+}
+.sidebar__categories {
+  margin-top: 70px;
+  background-color: #FCF6F6;
+  padding: 36px 30px 10px;
+  border-radius: 5px;
+}
+.sidebar__categories h2 {
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 10px;
+  margin-bottom: 33px;
+}
+.sidebar__category {
+  font-size: 17px;
+  line-height: 28px;
+  border-bottom: 1px solid #DDDDDD;
+  padding-left: 5px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.sidebar__category_travel {
+  position: relative;
+  margin-top: 20px;
+}
+.sidebar__list-item {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 300;
+  list-style: none;
+  margin-bottom: 5px;
+}
+.sidebar__list-item a {
+  text-decoration: none;
+  color: #4D4C49;
+}
+.sidebar__list-item a:hover {
+  cursor: url("../img/icons/cursor-dark.svg"), pointer;
+  font-weight: bold;
+}
+.sidebar__category_technology {
+  margin-bottom: 16px;
+  padding-bottom: 2px;
+}
+.sidebar__category_product {
+  margin-bottom: 16px;
+}
+.sidebar__tags {
+  margin-top: 70px;
+  background-color: #FCF6F6;
+  padding: 36px 0px 15px 30px;
+  border-radius: 5px;
+}
+.sidebar__tags h2 {
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 10px;
+  margin-bottom: 31px;
+}
+.sidebar__btn {
+  font-size: 15px;
+  line-height: 25px;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 4px 14px;
+  border-radius: 5px;
+  border: 1px solid #4D4C49;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+.sidebar__btn:hover {
+  cursor: url("../img/icons/cursor-gray.svg"), pointer;
+}
+.sidebar__btn_signs, .sidebar__btn_waterfall, .sidebar__btn_sea, .sidebar__btn_sense, .sidebar__btn_courage, .sidebar__btn_dancing {
+  margin-right: 12px;
+}
+.sidebar__category-title {
+  position: relative;
+  min-width: 394px;
+  display: block;
+  padding-bottom: 3px;
+  cursor: pointer;
+}
+.sidebar__category-title::after {
+  content: url("../img/icons/a-icon-arrow.svg");
+  position: absolute;
+  right: 0%;
+  top: 8%;
+  transition: all 0.3s ease-in;
+  display: inline-block;
+  transform-origin: 100% 0;
+}
+.sidebar__list {
+  display: none;
+}
+
+.footer {
+  border: none;
+}/*# sourceMappingURL=main_post.css.map */

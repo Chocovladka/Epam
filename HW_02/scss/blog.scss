@@ -1,0 +1,266 @@
+@import "_header";
+@import "_variables";
+@import "_mixins";
+@import "_footer";
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Hind Siliguri Regular;
+    position: relative;
+}
+
+.header{
+    position: fixed;
+    background: none;
+    padding: 0;
+    top: 0;
+    width: 100%;
+
+    .header__navbar{
+        margin: 0 auto;
+        height: 80px;
+    }
+
+    .header__navwrap{
+        background: none
+    }
+}
+
+.blog{
+
+    &__title{
+        text-align: center;
+        margin-top: 125px;
+    }
+
+    &__title-line{
+        @include title-line(8px,49px, 8px)
+    }
+
+    &__content{
+        display: grid;
+        max-width: 1160px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 1rem;
+    }
+
+    &__input{
+        grid-column: 9/13;
+        margin-top: 46px;
+        margin-left: 55px;
+        margin-bottom: 15px;
+        position: relative;
+
+        input{
+            padding: 10px 0 10px 10px;
+            height: 45px;
+            width: 320px;
+            border: 1px solid $main-dark-color;
+            border-radius: 5px;
+            font-size: 15px;
+            line-height: 25px;
+            
+        }
+    }
+
+    &__search-btn{
+        color: $main-dark-color;
+        border: none;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top: 8%;
+        right: 2%;
+        background-color: $white-text;
+
+        &:hover{
+            @include pointer("../img/icons/cursor-gray.svg");
+        }
+    }
+
+    &__post{
+        grid-column: 1/13;
+        display: flex;
+        flex-direction: row;
+        height: 379px;
+        border-radius: 5px;
+        margin-bottom: 33px;
+
+        &:hover{
+           box-shadow:$bottom-shadow;  
+        }
+        
+    }
+
+    &__img{
+        width: 560px;
+        border-radius: 5px;
+
+        &_video{
+            background: no-repeat url("../img/Imgage\ post\ 1.png");
+            position: relative;
+        }
+    }
+
+    &__video-icon{
+        position: absolute;
+        top: 40%;
+        left: 43.5%;
+    
+    }
+
+    &__description{
+        background-color: $blog-pink-bg;
+        padding: 27px 100px 40px 40px;
+        max-width: 600px;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    &__type-icon{
+        height: 76px;
+        width: 84px;
+        border: 3px solid $white-text;
+        border-radius: 5px;
+        position: absolute;
+        top: -1%;
+        right: -1%;
+        padding: 15px 22px 15px 15px;
+    }
+
+    &__post-header{
+        position: relative;
+        padding-left: 68px;
+
+        h4{
+            font-size: 17px;
+            line-height: 28px;
+        }
+
+        span{
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+
+    &__comments,
+    &__rating{
+        display: inline;
+        margin-left: 7px;
+    }
+
+    &__face{
+        position: absolute;
+        top: -1%;
+        left: -0.5%;
+    }
+
+    &__post-text{
+        text-align: left;
+        margin-top: 40px;
+
+        h3{
+            font-size: 20px;
+            letter-spacing: 0.01rem;
+            line-height: 26px;
+            margin-bottom: 15px;
+        }
+
+        p{
+            font-size: 17px;
+            line-height: 26px;
+        }
+    }
+
+    &__btn{
+        height: 45px;
+        width: 121px;
+        border: 1px solid #4D4949;
+        border-radius: 5px;
+        margin-top: 28px;
+        font-size: 15px;
+        line-height: 25px;
+        background-color: inherit;
+
+        &:hover{
+            @extend %hover-btn ;
+            @include pointer("../img/icons/cursor-gray.svg");
+        }
+    }
+
+    &__img_audio{
+        background: no-repeat url("../img/Imgage\ post\ 2.png");
+    }
+
+    &__player{
+        max-width: 214px;
+        max-height: 37px;
+        font-size: 13px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    &__description_audio{
+        .blog__btn{
+            margin-top: 30px;
+        }
+    }
+
+    &__img_view{
+        background: no-repeat url("../img/Image\ post\ 3.png");
+    }
+
+    &__post_text{
+        display: block;
+
+        .blog__post-header{
+            padding-left: 68px;
+            margin-top: 2px;
+
+        h4{
+            font-size: 17px;
+            line-height: 28px;
+        }
+
+        span{
+            font-size: 15px;
+            line-height: 25px;
+        }
+
+        .blog__face{
+            top: -0.5%;
+            left: -0.5%;
+        }
+
+        .blog__rating{
+            margin-left: 5px;
+        }
+        }
+    }
+
+    &__description_text{
+        max-width: 100%;
+        padding: 27px 100px 40px 28px;
+    }
+
+    &__btn_bottom{
+        grid-column: 6/8;
+        margin: 13px auto;
+        color: $white-text;
+        background-color: $main-dark-color;
+
+        &:hover{
+            @extend %hover-btn ;
+            @include pointer("../img/icons/cursor-gray.svg");
+        }
+    }
+}
+

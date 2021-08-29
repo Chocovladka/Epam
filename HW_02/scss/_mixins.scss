@@ -1,0 +1,25 @@
+@import "_variables";
+
+@mixin text-size($size, $line-height){
+    font-size: $size;
+    line-height: $line-height;
+}
+
+@mixin title-line($height,$width, $margin-top) {
+    height: $height;
+    width: $width;
+    border: 1px solid $main-dark-color;
+    border-top: none;
+    margin: $margin-top auto;
+}
+
+@mixin btn-init-style($width,$height){
+    border-radius: 5px;
+    height: $height;
+    width: $width;
+    cursor: pointer;
+}
+
+@mixin pointer($url){
+    cursor: url($url), pointer;
+}

@@ -1,0 +1,56 @@
+
+
+$main-dark-color:#4D4C49;
+$white-text:#fff;
+$blog-pink-bg:#FCF6F6;
+
+$transition:all .3s ease;
+
+$three-side-shadow: 0px 5px 5px 1px #9c9b95;
+$bottom-shadow: 0px 30px 15px -10px #DADADA;
+
+%grid-rules{
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+}
+
+%hover-btn {
+  cursor: url("../img/icons/cursor-dark.svg"), pointer;
+  background-color: #393737;
+  color: $white-text;
+}
+
+%before-line{
+  content: "-";
+  position: absolute;
+  bottom: 0;
+  left: -6%;
+}
+
+%after-line{
+  content: "-";
+  position: absolute;
+  bottom: 0;
+  right: -6%;
+}
+
+%translate-arrow-rule{
+  width: 0;
+        height: 0;
+        position: absolute;
+
+        &:checked ~.sidebar__list{
+            display: block;
+            margin-top: 7.5px;
+        }
+
+        &:checked ~.sidebar__category-title::after{
+            transform: rotate(180deg);
+            right: 4%;
+            top: 88%;
+        }
+}
+
